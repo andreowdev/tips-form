@@ -1,11 +1,13 @@
-import Form from "./Form.jsx";
+import Form from "./Form";
 
-let userIsRegistered = true
+let useRegister = true;
 
-export default function App() {
-  return (
-    <div>
-      <Form userIsRegistered = {userIsRegistered} />
+function App() {
+  return(
+    <div className="container">
+        <Form useRegister={useRegister}/>
     </div>
-  );
+  )
 }
+
+export default App
